@@ -1,0 +1,52 @@
+{
+  "name": "webpack-vue-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js",
+    "subtree:push": "git subtree push --prefix=src/subtree https://gitee.com/caiyingcheng/subtree.git",
+    "subtree:pull": "git subtree pull --prefix=src/subtree https://gitee.com/caiyingcheng/subtree.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:caiyingcheng/webpack-vue-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "autoprefixer": "^9.1.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "happypack": "^5.0.1",
+    "html-webpack-plugin": "4.0.0-beta.8",
+    "image-webpack-loader": "^7.0.1",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^2.1.6",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "vue-loader": "15.7.0",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "element-ui": "^2.15.5",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  }
+}
